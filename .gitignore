@@ -1,0 +1,20 @@
+# Fichiers et dossiers temporaires ou inutiles
+test
+Coinflip_demo_mov.icloud
+
+# Fichiers de dépendances (générés par npm/yarn)
+node_modules/
+my-app/node_modules/
+
+# Fichiers de lock (ils ne sont pas toujours nécessaires dans Git)
+package-lock.json
+my-app/package-lock.json
+
+# Dossiers à ignorer (correction des chemins)
+backup/
+backend/
+backup/backend/
+
+# Fichiers de build potentiellement inutiles
+build/
+dist/

@@ -1,0 +1,92 @@
+/* Copiez ce CSS dans src/index.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner {
+  background-color: #007bff;
+  color: white;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  font-size: 2em;
+}
+
+.create-game {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  margin: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+.connect {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  margin: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+.create-game:hover {
+  background-color: #217a38;
+}
+
+.game-list {
+  width: 80%;
+  max-width: 800px;
+}
+
+.game-item {
+  background-color: white;
+  border: 1px solid #007bff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.game-info {
+  flex-grow: 1;
+}
+
+.game-action {
+  margin-left: 20px;
+}
+
+.join-game {
+  background-color: #ffcc00;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.join-game:hover {
+  background-color: #e6b800;
+}
+
+@media (max-width: 600px) {
+  .game-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .game-action {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}

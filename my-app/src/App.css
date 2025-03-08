@@ -1,0 +1,212 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Arial', sans-serif; 
+  background: #c6c5d4;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #37367b;
+  height: 15vh;
+  font-family: 'Arial', sans-serif;
+  padding: 0 20px;
+}
+
+header h1 {
+  font-size: 2em;
+  color: #ffffff;
+  margin: 0;
+  flex: 1;
+  text-align: center;
+}
+
+.create-button {
+  background-color: #14044d;
+  color: #ffffff;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.5vw;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  margin-left: 9%;
+  margin-top: 3%;
+  margin-bottom: 1%;
+}
+
+.create-button:hover {
+  background-color: #12113b;
+}
+
+.connect-button {
+  background-color: #14044d;
+  color: #ffffff;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.5vw;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  margin-right: 9%;
+  margin-top: 3%;
+  float: right;
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+}
+
+.connect-button:hover {
+  background-color: #12113b;
+}
+
+.main-content {
+  background-color: #c6c5d4;
+  padding-bottom: 2rem;
+}
+
+.game-list, .game-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.game-list {
+  flex-direction: column;
+  align-items: stretch;
+  margin-left: 3.5%;
+  margin-right: 3.5%;
+}
+
+.game-item {
+  background: #37367b;
+  border-radius: 25px;
+  margin: 10px 5%;
+  color: white;
+  font-size: 2vw;
+  font-weight: bold;
+  height: 10vh;
+  padding: 0 1rem;
+}
+
+.join-button {
+  background-color: #14044d;
+  color: #ffffff;
+  padding: 1em 1.5em; 
+  border: none;
+  border-radius: 25px;
+  font-size: 1.5vw;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis;
+  height: 100%; 
+  width: 20vw;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal Content */
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  position: relative;
+}
+
+/* Bloc Gold pour le menu des paramètres */
+.modal-gold {
+  background-color: #FFD700;
+  color: black;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.parameter {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.parameter input,
+.parameter select {
+  margin-left: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Boutons dans la modal */
+.gold-button {
+  background-color: #FFD700;
+  color: black;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 5px;
+}
+.gold-button:hover {
+  background-color: #e6be00;
+}
+
+.cancel-button {
+  background-color: #bbb;
+  color: black;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 5px;
+}
+.cancel-button:hover {
+  background-color: #999;
+}
+
+/* Bouton Refund avec la même couleur que Join */
+.refund-button {
+  background-color: #14044d !important;
+  color: #ffffff !important;
+  margin-left: 10px;
+}
+
+/* CoinFlipAnimation Container */
+.coinflip-container {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+}
